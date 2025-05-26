@@ -1,6 +1,5 @@
 CC = g++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -Iincludes
-# CFLAGS = -std=c++98 -Iincludes
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = BraiiiiiiinnnzzzZ
 SRCS = main.cpp \
 		newZombie.cpp \
