@@ -2,7 +2,6 @@
 
 Zombie::Zombie(void)
 {
-	return;
 }
 Zombie::Zombie(std::string name)
 {
