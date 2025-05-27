@@ -21,11 +21,6 @@ void Harl::error( void )
 	std::cout <<"[ERROR]\n" << ERROR_MSG << std::endl;
 }
 
-std::string charStrToString(const char* s)
-{
-	std::string str = s;
-	return str;
-}
 
 void Harl::complain( std::string level )
 {
