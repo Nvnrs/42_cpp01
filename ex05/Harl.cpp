@@ -40,7 +40,10 @@ void Harl::complain( std::string level )
 	for (size_t i = 0; i < 4; i++)
 	{
 		if (keys[i] == level)
+		{
 			(this->*funcs[i])();
+			return;
+		}
 	}
 	
 }
