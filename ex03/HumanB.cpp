@@ -21,16 +21,18 @@ const std::string &HumanB::getName(void)
 	return this->name;
 }
 
-const Weapon &HumanB::getWeapon(void)
-{
-	return *this->weapon;
-}
-
 void HumanB::attack()
 {
-	Weapon weapon = this->getWeapon();
+	Weapon *weapon = this->weapon;
+	if (weapon == NULL)
+	{
+		std::cout << this->getName()
+			<< " doesn't have a weapon"
+			<< std::endl;
+			return;
+	}
 	std::cout << this->getName()
 		<< " attacks with their "
-		<< weapon.getType()
+		<< weapon->getType()
 		<< std::endl;
 }

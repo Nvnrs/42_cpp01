@@ -15,13 +15,9 @@ const std::string &HumanA::getName(void)
 	return this->name;
 }
 
-const Weapon &HumanA::getWeapon(void)
-{
-	return this->weapon;
-}
 void HumanA::attack()
 {
-	Weapon weapon = this->getWeapon();
+	Weapon weapon = this->weapon;
 	std::cout << this->getName()
 		<< " attacks with their "
 		<< weapon.getType()

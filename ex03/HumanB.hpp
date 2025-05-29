@@ -1,5 +1,5 @@
-#ifndef HUMAN_B_h
-#define HUMAN_B_h
+#ifndef HUMAN_B_H
+#define HUMAN_B_H
 #include <iostream>
 #include "Weapon.hpp"
 
@@ -14,7 +14,6 @@ class HumanB
 		void setName(std::string name);
 		void setWeapon(Weapon &weapon);
 		const std::string &getName(void);
-		const Weapon &getWeapon(void);
 		void attack();
 };
 
